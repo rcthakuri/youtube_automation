@@ -201,7 +201,6 @@ def cli_menu(yt: 'Youtube Object'):
             yt.play_yt_video()
         elif user_input == 2:
             if yt.driver:
-                print(yt.driver)
                 yt.stop()
             else:
                 print("\t\tInfo => Player has not started yet")
