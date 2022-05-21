@@ -1,0 +1,15 @@
+# Git ignore files
+
+# IDE files
+.idea
+
+# Virual environment
+venv
+
+# Python Initializer and cache files
+*__init__.py
+*__pycache__*
+
+
+# OS
+.DS_STORE
