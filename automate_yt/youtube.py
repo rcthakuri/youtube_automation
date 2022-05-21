@@ -112,7 +112,8 @@ class Youtube:
                 play_button.click()
 
         except Exception:
-            print("\t\tError => Exception on play()")
+            pass
+            # print("\t\tError => Exception on play()") # Toogle comment to see exception
 
     def set_duration(self, hours=None, minutes=None, second=None):
         seconds = 0
@@ -155,17 +156,6 @@ class YoutubeUIFinder:
                 ec.element_to_be_clickable(
                     (By.XPATH, YT_PLAY_BUTTON_XPATH)))
 
-        # yt_search_btn = self.webdriver \
-        #     .find_element(
-        #         by=By.XPATH,
-        #         value=f'''
-        #                 //button[
-        #                 contains(@class , {YT_PLAY_BUTTON_CLASS_1})
-        #                 and
-        #                 contains(@class , {YT_PLAY_BUTTON_CLASS_2})]
-        #               '''
-        # )
-        # print(yt_search_btn.get_attribute('innerHTML'))
         return yt_search_btn
 
 
@@ -226,8 +216,7 @@ def cli_menu(yt: 'Youtube Object'):
         user_input = int(input('\tEnter your choice: '))
         menu()
     except Exception as e:
-        pass
-        # print('\t\tError => ', e) # Toggle comment to see any exception
+        print('\t\tError => ', e)
 
 
 if __name__ == '__main__':
