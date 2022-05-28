@@ -1,0 +1,3 @@
+selenium==4.1.5
+webdriver-manager==3.5.4
+youtube-search-python==1.6.5
